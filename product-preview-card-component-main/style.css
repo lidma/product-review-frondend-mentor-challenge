@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+p {
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+}
+  .card {
+      margin: 30px auto ;
+      background-color: #fff;
+      width: 375px;
+      max-width: 100%;
+      border-radius: 10px;
+  }
+
+  .row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+.flavicon {
+    padding-right: 0.5em;
+}
+.image__product {
+    width: 100%;
+    height: auto;
+    align-self: top;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.col__left {
+    background-color:#fff ;
+    border-radius: 20px 20px 20px 20px;
+    flex: 1;
+    margin-top: 0;
+    padding: 0 20px;   
+}
+.article {
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2.5rem;
+}
+
+.name__of-article {
+    color: hsl(212, 21%, 14%);
+    font-size: 36px;
+    font-family: 'Fraunces', serif;
+}
+.description {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5em;
+    font-size: 15px;
+    
+}
+.price__tag {
+    font-family: 'Fraunces', serif;
+    display: flex;
+    
+}
+.first__price {
+    color:hsl(158, 36%, 37%);
+    width: 70%;
+    font-size: 36px;
+}
+.second__price {
+    align-self: center;
+    width: 30%;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+    
+}
+.call__to-action {
+    background-color:hsl(158, 36%, 37%) ;
+    display: block;
+    text-align: center;
+    margin-top: 5px ;
+    margin-bottom: 10px;
+    padding: 18px 16px;
+    border-radius: 15px;
+}
+
+@media (min-width:600px) {
+ 
+    .card {
+            background-color: #fff;
+            max-width: 660px;
+            width: 100%;
+            border-radius: 20px;
+            flex-direction: row;
+        }
+    .row {
+         flex-wrap: wrap;}
+
+        .col__left {
+            width: 100%;
+            padding: 0 20px;   
+        }
+        .image__product {
+            content: url(images/image-product-desktop.jpg);
+            border-radius: 10px 0px 0 10px ;
+            width: 50%; 
+        }
+
+      
+}
